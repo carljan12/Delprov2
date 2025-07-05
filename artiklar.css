@@ -1,0 +1,250 @@
+/* Grundläggande Reset och standardinställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fffdf9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Färgtema inspirerat av Utahs ökenlandskap */
+:root {
+    --primary-color: #a63f24; /* Röd sandstensfärg */
+    --secondary-color: #f2b066; /* Solgul */
+    --accent-color: #4c7d57; /* Grön vegetation */
+    --background-light: #fffdf9; /* Ljus bakgrund */
+    --text-dark: #333;
+}
+
+/* Header och navigation */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Startsida - Introduktion */
+.intro {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.intro img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.intro p {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+/* Artikellista */
+.artiklar h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    display: inline-block;
+}
+
+.artikel-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .artikel-lista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+article img {
+    max-width: 100%;
+    height: 280px;
+    width: 270px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+article h4 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+article p {
+    margin-bottom: 0.8rem;
+}
+
+article a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+article a:hover {
+    background-color: #386043;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Artikelsida */
+.artikel-detalj img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.artikel-detalj h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.artikel-detalj p {
+    margin: 1rem 0;
+}
+
+/* Om-sida */
+.om {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.om h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.om a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Kontaktformulär */
+form {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #386043;
+}
+
+/* Feedbacksida */
+.feedback {
+    max-width: 600px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.feedback h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}

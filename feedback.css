@@ -1,0 +1,88 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #fffdf9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #a63f24;
+    --accent-color: #4c7d57;
+}
+
+/* Header och navigation */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Feedback-meddelande */
+.feedback {
+    max-width: 600px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.feedback h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.feedback p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #386043;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}

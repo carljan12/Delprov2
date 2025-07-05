@@ -1,0 +1,129 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #fffdf9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #a63f24;
+    --accent-color: #4c7d57;
+    --background-light: #fffdf9;
+}
+
+/* Header och navigationsmeny */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Kontaktformulär */
+.kontakt {
+    max-width: 600px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.kontakt h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.kontakt p {
+    margin-bottom: 2rem;
+}
+
+form {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #386043;
+}
+
+/* Kontaktinformation */
+.kontaktinfo {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.kontaktinfo h3 {
+    color: var(--accent-color);
+}
+
+.kontaktinfo a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.kontaktinfo a:hover {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}

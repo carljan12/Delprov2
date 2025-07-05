@@ -1,0 +1,113 @@
+/* Grundinställningar och färgtema */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #fffdf9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #a63f24; /* Röd sandsten */
+    --secondary-color: #f2b066; /* Solgul */
+    --accent-color: #4c7d57; /* Grön vegetation */
+    --background-light: #fffdf9;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header och navigation */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Innehåll - Om-sida */
+.om {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.om h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.om p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 1rem 0;
+}
+
+.om h3 {
+    color: var(--accent-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.om ul {
+    list-style: none;
+    padding: 0;
+}
+
+.om li {
+    margin: 0.5rem 0;
+}
+
+.om a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.om a:hover {
+    color: #386043;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
