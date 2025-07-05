@@ -1,0 +1,160 @@
+/* Grundläggande inställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fffdf9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Färgtema som jag tycker passa Utahs ökenlandskap */
+:root {
+    --primary-color: #a63f24; /* röd sandstensfärg */
+    --secondary-color: #f2b066; /* solgul */
+    --accent-color: #4c7d57; /* grön vegetation */
+    --background-light: #fffdf9; /* sandig bakgrund */
+    --text-dark: #333;
+}
+
+/* Header och navigationsmeny */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Startsida med Introduktionstext */
+.intro {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.intro img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+/* Utvalda Artiklar */
+.artiklar h3 {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+.artikel-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media(min-width: 768px) {
+    .artikel-lista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+article {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+
+}
+
+article h4 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+article p {
+    margin-bottom: 0.5rem;
+}
+
+article a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+article a:hover {
+    background-color: #386043;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
